@@ -13,6 +13,10 @@ import {
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
+window.onload = () => {
+  localStorage.clear();
+};
+
 const persistConfig = {
   key: 'root',
   version: 1,
